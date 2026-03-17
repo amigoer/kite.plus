@@ -1,0 +1,18 @@
+{
+  "name": "kite.plus",
+  "version": "1.0.0",
+  "description": "Kite 官方文档站",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amigoer/kite.plus.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}

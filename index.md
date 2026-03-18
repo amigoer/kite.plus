@@ -24,8 +24,8 @@ features:
     title: AI 原生
     details: 一键对接 OpenAI / DeepSeek / Ollama 等大模型，自动生成文章摘要和标签推荐，让写作更高效。
   - icon: 🎨
-    title: 双渲染模式
-    details: Classic 模式使用 Go Template SSR 直出 HTML；Headless 模式提供纯 JSON API，自由对接任何前端框架。
+    title: 三种运行模式
+    details: Classic 模式 Go Template SSR 直出 HTML；Headless 模式纯 JSON API 自由对接前端框架；Static Build 模式一键生成纯静态站点，部署到任意托管服务。
   - icon: ✍️
     title: Tiptap 富文本编辑器
     details: Markdown / 所见即所得双模式切换，支持代码高亮、表格、Callout、拖拽上传图片等。

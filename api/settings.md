@@ -76,7 +76,7 @@
 
 | 字段 | 说明 |
 |------|------|
-| `render_mode` | 渲染模式：`classic` / `headless` |
+| `render_mode` | 在线渲染模式：`classic` / `headless`（Static Build 通过 CLI 命令触发，不涉及此设置） |
 | `api_prefix` | API 前缀 |
 | `enable_cors` | 是否启用 CORS |
 

@@ -5,7 +5,7 @@
 Kite 后端采用严格分层结构：`api -> service -> repo -> model`。
 
 当前 API 设计目标：
-- 统一支持 `classic` 与 `headless` 两种渲染模式
+- 统一支持 `classic`、`headless` 与 `static build` 三种运行模式
 - 所有资源主键均使用 `uuid.UUID`
 - 所有错误都以统一 JSON 结构返回，禁止 `panic`
 - 同时兼容 SQLite 与 PostgreSQL
@@ -20,7 +20,9 @@ Kite 后端采用严格分层结构：`api -> service -> repo -> model`。
 | 时间格式 | RFC3339 |
 | ID 类型 | UUID v7 |
 
-## 渲染模式
+## 运行模式
+
+Kite 支持三种运行模式：
 
 ### Classic 模式
 
@@ -35,6 +37,14 @@ Kite 后端采用严格分层结构：`api -> service -> repo -> model`。
 - 不输出 SSR 页面
 - 仅保留 JSON API
 - 所有前台能力通过 API 提供给外部前端
+
+### Static Build 模式
+
+通过 `./kite build` 命令：
+- 从数据库读取全部数据，预生成纯静态 HTML 文件
+- 输出 RSS、Sitemap、静态资源等完整站点
+- 无需运行 Go 后端，可直接部署到 GitHub Pages / Nginx / CDN
+- 详见 [静态站点生成](/guide/static-build)
 
 ## 统一响应结构
 
@@ -192,6 +202,6 @@ admin:
 
 - 全部 CRUD：文章、分类、标签、评论、独立页面、友情链接、系统设置
 - 鉴权：Cookie-based Session Auth（login/logout/middleware）
-- SSR 模板渲染 + Headless API 双模式
+- 三种运行模式：Classic SSR + Headless API + Static Build 静态生成
 - Admin SPA 嵌入 Go 二进制，生产环境单进程部署
 - Markdown → HTML 自动转换

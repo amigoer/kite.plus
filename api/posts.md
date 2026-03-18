@@ -62,7 +62,7 @@
 
 ### `GET /api/v1/posts/slug/:slug`
 
-根据 slug 获取前台公开文章详情。供 classic 前台和 headless 前端共用。
+根据 slug 获取前台公开文章详情。供 Classic SSR 前台、Headless 前端及 Static Build 共用。
 
 ## 管理接口
 

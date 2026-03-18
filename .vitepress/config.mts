@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   // 站点元数据
   title: 'Kite',
   description: '轻量级 AI 原生博客引擎 · Go + React + SQLite · 单二进制部署',
@@ -143,4 +144,4 @@ export default defineConfig({
     // 外部链接图标
     externalLinkIcon: true,
   },
-})
+}))

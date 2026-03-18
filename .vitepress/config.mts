@@ -58,6 +58,12 @@ export default defineConfig({
             { text: 'SSR 接口', link: '/guide/ssr' },
           ],
         },
+        {
+          text: '部署',
+          items: [
+            { text: '静态站点生成', link: '/guide/static-build' },
+          ],
+        },
       ],
       '/api/': [
         {

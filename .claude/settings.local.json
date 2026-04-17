@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/amigoer/DevProjects/kite/**)",
+      "Read(//Users/amigoer/DevProjects/**)"
+    ]
+  }
+}

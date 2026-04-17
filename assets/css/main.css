@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --ui-primary: var(--ui-color-primary-500);
+}
+
+/* Prose tweaks for docs pages */
+.prose :where(pre) {
+  border: 1px solid rgb(var(--ui-border) / 1);
+  border-radius: 0.5rem;
+}
+
+.prose :where(a) {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.prose :where(a):hover {
+  text-decoration: underline;
+}
+
+.prose :where(h1, h2, h3, h4) {
+  scroll-margin-top: 6rem;
+}

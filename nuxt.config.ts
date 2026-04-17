@@ -66,6 +66,18 @@ export default defineNuxtConfig({
     fonts: false,
   },
 
+  nitro: {
+    prerender: {
+      routes: ['/', '/docs'],
+      crawlLinks: true,
+      failOnError: false,
+    },
+  },
+
+  routeRules: {
+    '/docs/**': { prerender: true },
+  },
+
   future: {
     compatibilityVersion: 4,
   },

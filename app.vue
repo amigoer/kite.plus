@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const colorMode = useColorMode()
-
 useHead({
   htmlAttrs: { lang: 'zh-CN' },
 })
@@ -8,7 +6,7 @@ useHead({
 
 <template>
   <UApp>
-    <NuxtLoadingIndicator color="#0ea5e9" />
+    <NuxtLoadingIndicator color="#27272a" />
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

@@ -36,7 +36,7 @@ useSeoMeta({
       </p>
     </header>
 
-    <div class="prose prose-slate dark:prose-invert max-w-none">
+    <div class="docs-prose max-w-none">
       <ContentRenderer :value="page" />
     </div>
 

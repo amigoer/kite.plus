@@ -10,13 +10,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="prose prose-slate dark:prose-invert max-w-none">
+  <div class="docs-prose max-w-none">
     <h1>Kite 文档</h1>
     <p class="lead">
       欢迎来到 Kite 文档站。选择你感兴趣的章节开始阅读。
     </p>
 
-    <div class="not-prose mt-8 grid gap-4 md:grid-cols-2">
+    <div class="docs-grid mt-8 grid gap-4 md:grid-cols-2">
       <NuxtLink
         to="/docs/guide/introduction"
         class="group rounded-lg border border-default p-6 transition-colors hover:border-primary"

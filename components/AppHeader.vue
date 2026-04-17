@@ -1,8 +1,25 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
-const isDark = computed({
-  get: () => colorMode.value === 'dark',
-  set: (v) => (colorMode.preference = v ? 'dark' : 'light'),
+const isMounted = ref(false)
+
+const isDark = computed(() => colorMode.value === 'dark')
+
+const themeIcon = computed(() => {
+  if (!isMounted.value) {
+    return 'i-lucide-monitor'
+  }
+
+  return isDark.value ? 'i-lucide-sun' : 'i-lucide-moon'
+})
+
+const themeLabel = computed(() => (isDark.value ? '切换到浅色模式' : '切换到深色模式'))
+
+function toggleTheme() {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
+
+onMounted(() => {
+  isMounted.value = true
 })
 
 const links = [
@@ -39,8 +56,10 @@ const links = [
         <UButton
           color="neutral"
           variant="ghost"
-          :icon="isDark ? 'i-lucide-sun' : 'i-lucide-moon'"
-          @click="isDark = !isDark"
+          :icon="themeIcon"
+          :aria-label="themeLabel"
+          :title="themeLabel"
+          @click="toggleTheme"
         />
         <UButton
           to="https://github.com/amigoer/kite"

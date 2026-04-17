@@ -27,6 +27,7 @@ export default defineNuxtConfig({
             'docker',
             'ini',
             'sql',
+            'mermaid',
           ],
         },
         toc: {

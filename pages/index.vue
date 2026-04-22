@@ -92,7 +92,7 @@ const installMethods: {
     hint: '从 GitHub Releases 下载对应平台压缩包直接运行。',
     lang: 'bash',
     code: `# Linux amd64 示例
-curl -LO https://github.com/amigoer/kite/releases/latest/download/kite-linux-amd64.tar.gz
+curl -LO https://github.com/kite-plus/kite/releases/latest/download/kite-linux-amd64.tar.gz
 tar -xzf kite-linux-amd64.tar.gz
 chmod +x kite
 
@@ -175,7 +175,7 @@ const { data: release } = await useLatestRelease()
       <div class="mx-auto max-w-5xl text-center">
         <div v-if="release?.tag" class="mb-8 flex justify-center">
           <NuxtLink
-            :to="release.url ?? `https://github.com/amigoer/kite/releases/tag/${release.tag}`"
+            :to="release.url ?? `https://github.com/kite-plus/kite/releases/tag/${release.tag}`"
             target="_blank"
             class="group inline-flex items-center gap-2 rounded-full border border-default bg-elevated/70 px-4 py-1.5 text-xs font-medium text-muted backdrop-blur transition-colors hover:border-primary hover:text-default"
           >
@@ -208,7 +208,7 @@ const { data: release } = await useLatestRelease()
             快速开始
           </UButton>
           <UButton
-            to="https://github.com/amigoer/kite"
+            to="https://github.com/kite-plus/kite"
             target="_blank"
             size="xl"
             color="neutral"

@@ -9,7 +9,7 @@ export function useLatestRelease() {
     async () => {
       try {
         const res = await $fetch<{ tag_name?: string; html_url?: string }>(
-          'https://api.github.com/repos/amigoer/kite/releases/latest',
+          'https://api.github.com/repos/kite-plus/kite/releases/latest',
           {
             headers: { Accept: 'application/vnd.github+json' },
             timeout: 5000,

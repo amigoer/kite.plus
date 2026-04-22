@@ -26,10 +26,10 @@ const columns: {
   {
     title: '资源',
     links: [
-      { label: 'GitHub 仓库', to: 'https://github.com/amigoer/kite', target: '_blank' },
-      { label: '发布版本', to: 'https://github.com/amigoer/kite/releases', target: '_blank' },
+      { label: 'GitHub 仓库', to: 'https://github.com/kite-plus/kite', target: '_blank' },
+      { label: '发布版本', to: 'https://github.com/kite-plus/kite/releases', target: '_blank' },
       { label: '在线演示', to: 'https://www.kite.plus', target: '_blank' },
-      { label: '问题反馈', to: 'https://github.com/amigoer/kite/issues', target: '_blank' },
+      { label: '问题反馈', to: 'https://github.com/kite-plus/kite/issues', target: '_blank' },
     ],
   },
 ]
@@ -49,7 +49,7 @@ const columns: {
           </p>
           <div class="mt-4 flex items-center gap-2">
             <UButton
-              to="https://github.com/amigoer/kite"
+              to="https://github.com/kite-plus/kite"
               target="_blank"
               aria-label="GitHub"
               color="neutral"

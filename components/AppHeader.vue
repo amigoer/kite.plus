@@ -51,7 +51,7 @@ const { data: release } = await useLatestRelease()
           </NuxtLink>
           <a
             v-if="release?.tag"
-            :href="release.url ?? `https://github.com/amigoer/kite/releases/tag/${release.tag}`"
+            :href="release.url ?? `https://github.com/kite-plus/kite/releases/tag/${release.tag}`"
             target="_blank"
             rel="noopener"
             :title="`最新版本 ${release.tag}`"
@@ -83,7 +83,7 @@ const { data: release } = await useLatestRelease()
           @click="toggleTheme"
         />
         <UButton
-          to="https://github.com/amigoer/kite"
+          to="https://github.com/kite-plus/kite"
           target="_blank"
           color="neutral"
           variant="ghost"

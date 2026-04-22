@@ -10,8 +10,8 @@ const columns: {
     links: [
       { label: '快速开始', to: '/docs/guide/quick-start' },
       { label: '配置说明', to: '/docs/guide/configuration' },
-      { label: '存储后端', to: '/docs/guide/storage' },
       { label: '生产部署', to: '/docs/guide/deployment' },
+      { label: '升级指南', to: '/docs/guide/upgrade' },
     ],
   },
   {

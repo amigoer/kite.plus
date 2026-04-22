@@ -40,6 +40,12 @@ const guideSections = [
     to: '/docs/guide/deployment',
   },
   {
+    icon: 'i-lucide-arrow-up-circle',
+    title: '升级指南',
+    description: '备份 · 升级 · 校验 · 回滚全流程。',
+    to: '/docs/guide/upgrade',
+  },
+  {
     icon: 'i-lucide-puzzle',
     title: '第三方客户端',
     description: 'PicGo · ShareX 等主流图床客户端接入。',
